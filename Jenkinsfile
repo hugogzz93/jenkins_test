@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'node:6.3' }
+    agent { docker 'ra' }
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'bundle exec rake'
             }
         }
     }
