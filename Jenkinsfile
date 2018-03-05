@@ -1,9 +1,10 @@
 pipeline {
     agent { docker 'pinelo93/jenkins_test:latest' }
     stages {
-        stage('build') {
+        stage('test') {
             steps {
                 sh 'bundle exec rake'
+                sh 'bundle exec rubocop'
             }
         }
     }

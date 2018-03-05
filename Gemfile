@@ -54,3 +54,5 @@ gem 'spring-commands-rspec', :groups => [:development, :test]
 gem 'rspec-rails', :groups => [:development, :test]
 gem 'factory_girl_rails', :groups => [:development, :test]
 gem 'capybara', :groups => [:development]
+gem 'rubocop', :groups => [:development]
+
